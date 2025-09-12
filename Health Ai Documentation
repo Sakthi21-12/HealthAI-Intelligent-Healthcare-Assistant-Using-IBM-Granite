@@ -1,145 +1,86 @@
-PDF- https://drive.google.com/file/d/1-9Rl7dM5XtUpREm2kr6TJGAdU2IBb4VG/view?usp=drive_link
-Word- https://docs.google.com/document/d/1UUqrJVKRmsC8YDJHzrBr1nxL2YpZg-fL/edit?usp=drive_link&ouid=114804870749534414165&rtpof=true&sd=true
-HEALTHAI: INTELLIGENT HEALTHCARE ASSISTANT
+PDF file-"https://drive.google.com/file/d/1iHDMaVRTovHdEmqV02GjiC8Edt5x-nZ_/view?usp=drive_link"
+HealthAI: Intelligent Healthcare Assistant
 
-PROJECT TEAM
+1. Project Overview
+HealthAI is an innovative AI-powered web application designed to serve as a personal healthcare companion. Developed using Python and leveraging the robust capabilities of the IBM Granite-3.2-2B-Instruct Large Language Model (LLM), the project utilizes Gradio for its user-friendly web interface. HealthAI aims to provide users with accessible healthcare information, assist in understanding potential health conditions, and offer insights into health data analysis.
+
+2. Project Description
+HealthAI harnesses the power of IBM’s Granite LLM to offer a conversational AI experience for healthcare-related queries. Users can:
+Interact with the assistant to ask questions
+Explore symptoms to identify possible conditions
+Generate informational treatment plans
+Analyze synthetic health data
+The application is built with a strong emphasis on responsible AI principles, ensuring user safety and data privacy.
+Disclaimer: This application is a prototype and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
+
+3. Project Team
 Team ID: NM2025TMID03856
 Team Size: 4
-Team Leader: SAKTHIMURUGAN S
-Team Members: RAGUL R, RAJESH S, RAJKUMAR I
+Team Leader: Sakthimurugan S
+Team Members: Ragul R, Rajesh S, Rajkumar I
 
-1. PROJECT OVERVIEW
-HealthAI is an innovative AI-powered web application designed to serve as a
-personal healthcare companion. Developed using Python and leveraging the
-robust capabilities of the IBM Granite-3.2-2B-Instruct Large Language Model (LLM),
-the project utilizes Gradio for its user-friendly web interface. HealthAI aims to
-provide users with accessible healthcare information, assist in understanding
-potential health conditions, and offer insights into health data analysis.
+4. User Interface (UI) and Workflow
+HealthAI features an intuitive interface designed for ease of use:
+Patient Profile:
+Users can input and manage their personal health information, including Name, Age, Gender, Medical History, Current Medications, and Allergies. This information aids in personalizing the AI’s responses.
+Core Modules:
+The application is organized into distinct modules accessible via tabs:
+Patient Chat: A conversational interface for users to interact with the AI, ask health-related questions, and receive responses.
+Disease Prediction: Allows users to input symptoms and receive an AI-generated analysis of potential conditions.
+Treatment Plans: Enables the generation of personalized, informational treatment plans based on diagnosed conditions.
+Health Analytics: Provides a dashboard to visualize and analyze key health metrics over time, offering AI-driven insights.
+Health Metrics Dashboard:
+Displays synthetic data for Heart Rate, Blood Pressure, and Blood Glucose, with trend analysis and AI-generated insights into the user’s health status.
 
-2. PROJECT DESCRIPTION
-At its core, HealthAI harnesses the power of IBM's Granite LLM to offer a
-conversational AI experience for healthcare-related queries. Users can interact with
-the assistant to ask questions, explore symptoms to identify possible conditions,
-generate informational treatment plans, and analyze synthetic health data. The
-application is built with a strong emphasis on responsible AI principles, ensuring
-user safety and data privacy.
-Disclaimer: This application is a prototype and is not a substitute for
-professional medical advice, diagnosis, or treatment. Always seek the advice of
-your physician or other qualified health provider with any questions you may have
-regarding a medical condition.
+5. Technical Architecture
+Frontend: Developed using Gradio Blocks API, with custom CSS for styling, ensuring a responsive and visually appealing user experience.
+Backend: Powered by Hugging Face Transformers, integrating the ibm-granite/granite-3.2-2b-instruct model for natural language processing and response generation.
+Data Processing & Visualization: Libraries such as pandas and numpy are used for data manipulation, while plotly.express facilitates the creation of insightful visualizations.
+State Management & Caching: Gradio’s state management is used for maintaining user session data, and in-memory hash caching is utilized for performance optimization.
 
+6. Safety & Compliance Measures
+Emergency Keyword Detection: The system is designed to identify and flag critical health terms (e.g., “chest pain”, “suicide”) to prompt users to seek professional medical help immediately.
+PII Filtering: Robust mechanisms are in place to detect and filter Personally Identifiable Information (PII) such as phone numbers, emails, and identification numbers from user inputs.
+Clear Disclaimers: All AI-generated outputs are accompanied by clear disclaimers emphasizing that the information is for educational purposes only and not a substitute for professional medical advice.
+Structured JSON Outputs: Responses are formatted in JSON to ensure consistency, and safe, predictable handling of information.
 
-3. USER INTERFACE (UI) AND WORKFLOW
-The HealthAI application features an intuitive interface designed for ease of use:
-Patient Profile: Users can input and manage their personal health
-information, including Name, Age, Gender, Medical History, Current
-Medications, and Allergies. This information aids in personalizing the AI's
-responses.
-Core Modules: The application is organized into distinct modules accessible
-via tabs:
-Patient Chat: A conversational interface for users to interact with the
-AI, ask health-related questions, and receive responses.
-Disease Prediction: Allows users to input symptoms and receive an
-AI-generated analysis of potential conditions.
-Treatment Plans: Enables the generation of personalized,
-informational treatment plans based on diagnosed conditions.
-Health Analytics: Provides a dashboard to visualize and analyze key
-health metrics over time, offering AI-driven insights.
-Health Metrics Dashboard: Displays synthetic data for Heart Rate, Blood
-Pressure, and Blood Glucose, presented with trend analysis and AI-generated
-insights into the user's health status.
-
-4. TECHNICAL ARCHITECTURE
-The technical foundation of HealthAI is built upon a modern stack:
-Frontend: Developed using Gradio Blocks API, with custom CSS for styling,
-ensuring a responsive and visually appealing user experience.
-
-Backend: Powered by Hugging Face Transformers, integrating the `ibm-
-granite/granite-3.2-2b-instruct` model for natural language processing and
-
-response generation.
-Data Processing & Visualization: Libraries such as `pandas` and `numpy` are
-used for data manipulation, while `plotly.express` facilitates the creation of
-insightful visualizations.
-State Management & Caching: Gradio's state management is employed for
-maintaining user session data, and in-memory hash caching is utilized for
-performance optimization.
-
-
-5. SAFETY & COMPLIANCE MEASURES
-Safety and responsible AI practices are paramount in HealthAI:
-Emergency Keyword Detection: The system is designed to identify and flag
-critical health terms (e.g., 'chest pain', 'suicide') to prompt users to seek
-professional medical help immediately.
-PII Filtering: Robust mechanisms are in place to detect and filter Personally
-Identifiable Information (PII) such as phone numbers, emails, and
-identification numbers from user inputs.
-Clear Disclaimers: All AI-generated outputs are accompanied by clear
-disclaimers emphasizing that the information is for educational purposes only
-and not a substitute for professional medical advice.
-Structured JSON Outputs: Responses are formatted in JSON to ensure
-consistency and safe, predictable handling of information.
-
-6. HOW TO RUN THE APPLICATION
+7. How to Run the Application
 Prerequisites
 Python version 3.9 or higher
 pip package installer
 Installation Steps
-Clone the repository: git clone https://github.com/yourusername/
-healthai.git
-Navigate to the project directory: cd healthai
-Install the required dependencies: pip install -r requirements.txt
+Clone the repository:
+git clone https://github.com/yourusername/healthai.git
+Navigate to the project directory:
+cd healthai
+Install the required dependencies:
+pip install -r requirements.txt
 Running the Application
-Execute the main script: python healthai_app.py
-Access the application via your web browser at: http://127.0.0.1:7860/
+Execute the main script:
+python healthai_app.py
+Access the application via your web browser at:
+http://127.0.0.1:7860/
 
-
-7. PLATFORM AVAILABILITY
+8. Platform Availability
 HealthAI is designed for flexibility and scalability:
 Local Deployment: Easily run on personal computers and laptops.
-Web Hosting: Deployable on cloud platforms like Hugging Face Spaces, AWS,
-and Azure for broader accessibility.
-Docker Containerization: Supports containerization for streamlined
-deployment and scaling.
-API Integration: The application can be integrated with other systems via
-REST endpoints.
+Web Hosting: Deployable on cloud platforms like Hugging Face Spaces, AWS, and Azure for broader accessibility.
+Docker Containerization: Supports containerization for streamlined deployment and scaling.
+API Integration: The application can be integrated with other systems via REST endpoints.
 
-8. POTENTIAL USE CASES
-The HealthAI application has a wide range of potential applications:
-Patient and Family Health Companion: Empowering individuals to manage
-their health proactively.
-Hospital Prototype: Serving as a secure and informative AI assistant for
-healthcare providers.
-Research Tool: A valuable resource for developers and researchers exploring
-LLM applications in healthcare.
-Educational Aid: A supplementary learning tool for students and medical
-professionals.
+9. Potential Use Cases
+Patient and Family Health Companion: Empowering individuals to manage their health proactively.
+Hospital Prototype: Serving as a secure and informative AI assistant for healthcare providers.
+Research Tool: A valuable resource for developers and researchers exploring LLM applications in healthcare.
+Educational Aid: A supplementary learning tool for students and medical professionals.
 
-9. LIMITATIONS
-While HealthAI offers significant capabilities, it's important to note its current
-limitations:
-Synthetic Data Only: The application currently processes only synthetic
-health data, not real patient information.
-Informational Purpose: All outputs are strictly for informational and
-educational purposes and do not constitute medical diagnosis.
-No Clinical Certification: The prototype is not certified for clinical
-deployment and should not be used in direct patient care settings without
-further validation and regulatory approval.
+10. Limitations
+Synthetic Data Only: The application currently processes only synthetic health data, not real patient information.
+Informational Purpose: All outputs are strictly for informational and educational purposes and do not constitute medical diagnosis.
+No Clinical Certification: The prototype is not certified for clinical deployment and should not be used in direct patient care settings without further validation and regulatory approval.
+
+11. Conclusion
+HealthAI represents a responsible and forward-thinking approach to integrating LLMs into the healthcare domain. By prioritizing usability, safety, and accessibility, this prototype lays a solid foundation for future advancements in AI-driven healthcare solutions. It demonstrates the potential of LLMs to empower users with health knowledge and contribute to a more informed approach to personal well-being.
 
 
-10. CONCLUSION
-HealthAI represents a responsible and forward-thinking approach to integrating
-LLMs into the healthcare domain. By prioritizing usability, safety, and accessibility,
-this prototype lays a solid foundation for future advancements in AI-driven
-healthcare solutions. It demonstrates the potential of LLMs to empower users with
 
-health knowledge and contribute to a more informed approach to personal well-
-being.
-
-HEALTHAI APPLICATION INTERFACE SHOWCASE
-
-PATIENT CHAT INTERFACE
-
-DISEASE PREDICTION INTERFACE
-
-HEALTH ANALYTICS INTERFACE
